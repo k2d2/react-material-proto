@@ -23,8 +23,7 @@ let config = Object.assign({}, baseConfig, {
       searchResolveModulesDirectories: false
     })
   ],
-  module: defaultSettings.getDefaultModules(),
-  port: 3000
+  module: defaultSettings.getDefaultModules()
 });
 
 // Add needed loaders to the defaults here
