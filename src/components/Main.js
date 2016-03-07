@@ -13,6 +13,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import AppBar from 'material-ui/lib/app-bar';
 import Checkbox from 'material-ui/lib/checkbox';
+import * as Colors from 'material-ui/lib/styles/colors';
 import Dialog from 'material-ui/lib/dialog';
 import Divider from 'material-ui/lib/divider';
 import FlatButton from 'material-ui/lib/flat-button';
@@ -51,7 +52,14 @@ class AppComponent extends React.Component {
     }
 
     return <div className="index">
-      <div class="splash">
+      <div className="splash">
+        <FontIcon
+          className="material-icons"
+          color={Colors.green300}
+          style={{fontSize: '10em', marginBottom: '100'}}
+        >
+          check_circle
+        </FontIcon>
         <FlatButton
           icon={
             <FontIcon className="material-icons">arrow_forward</FontIcon>
