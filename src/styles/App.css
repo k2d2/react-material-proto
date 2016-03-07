@@ -4,3 +4,38 @@ body {
   background: #fff;
 }
 
+.index {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.main {
+  z-index: 500;
+  position: relative;
+}
+
+.main-enter, .main-appear {
+  right: -100%;
+}
+
+.main-enter.main-enter-active, .main-appear.main-appear-active {
+  right: 0;
+  transition: right 500ms ease-in;
+}
+
+.main-leave {
+  right: 0;
+}
+
+.main-leave.main-leave-active {
+  right: -100%;
+  transition: right 300ms ease-in;
+}
+
